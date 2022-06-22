@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/* body{
+    background-color: #5fff87;
+} */
+body {
+    width: 100%;
+    height:100%;
+    background: linear-gradient(-45deg,  #d4b500, #FFD700, #ffdf29, #FFD700);
+    background-size: 3000% 3000%;
+    animation: gradient 15s ease infinite;
+}
+a{
+    color: white;
+}
+.container{
+    background-color: #222222;
+    color: azure;
+    /* font-size: 10vw; */
+    border-radius: 20px;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    animation: mymove 10s infinite;
+}
+.btext{
+    font-size: 1.5vw;
+    margin: auto;
+}
+span{
+    font-family: 'Quicksand', sans-serif;
+    vertical-align: middle;
+}
+.logo{
+    width: 3vw;
+    height: auto;
+}
+.navbar{
+    align-self: baseline;
+    display: flex;
+}
+.elem{
+    padding: 0.5vw 1.5vw 0.5vw;
+    align-self: baseline;
+}
+.elem > *{
+    display: flex;
+    transition: color 2s;
+}
+.elem:hover > *{
+    color: #ffdf29;
+}
+.right{
+    margin-left: auto;
+}
+.selected{
+    color: #ffdf29;
+}
+.content{
+    display: block;
+    margin: 1vw;
+    font-size: 1.5vw;
+}
+p{
+    text-align: justify;
+}
+table{
+    margin: auto;
+}
+td{
+    text-align: center;
+    width: 50vw;
+}
+b{
+    display: block;
+    text-align: center;
+}
+.inbuild{
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 1000%;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+/*-------------------*/
+@media only screen and (max-width: 1000px) {
+    .container{
+        border-radius: 20px;
+        margin: 1vw;
+        padding: 1vw;
+    }
+    .btext{
+        font-size: 3em;
+    }
+    .navbar{
+        display: inline-table;
+        width: 100%;
+    }
+    .elem{
+        padding: 0.5vw 1.5vw 0.5vw;
+        align-self: baseline;
+    }
+    .elem > *{
+        display:flex;
+        transition: color 2s;
+    }
+    span{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 2em;
+    }
+    .content{
+        font-size: x-large;
+    }
+    .logo{
+        display: none !important;
+    }
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes mymove {
+    0% {box-shadow: 0px 5px 25px black;}
+    50% {box-shadow: 10px 5px 25px black;}
+    100% {box-shadow: 0px 5px 25px black;}
+  }
